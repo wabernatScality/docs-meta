@@ -1,7 +1,7 @@
 .. _blog-guidelines:
 
 ===============
-Blog guidelines
+Blog Guidelines
 ===============
 
 Developers often ask an Information Developer to edit a blog that they
@@ -18,9 +18,8 @@ Information Development team. Start with the information in the
 This topic provides additional guidelines specific to writing blogs for
 the MongoDB Developer Blog site.
 
-
-Things to consider before writing a blog
-----------------------------------------
+Things to Consider Before Writing a Blog Post
+---------------------------------------------
 
 Before you start writing, consider the following questions:
 
@@ -51,7 +50,7 @@ Before you start writing, consider the following questions:
   competition? If yes, explain.
 
 
-Blog writing suggestions
+Blog Writing Suggestions
 ------------------------
 
 When you write your content, we recommend the following rules of thumb:
@@ -139,7 +138,7 @@ When you write your content, we recommend the following rules of thumb:
   We’re here to help.
 
 
-Voice and tone
+Voice and Tone
 --------------
 
 Use these guidelines to write a blog that is friendly, helpful, and
@@ -190,7 +189,7 @@ blog text:
 
 
 
-Write to the user by using second person and imperative mood
+Write to the User by using Second Person and Imperative Mood
 ------------------------------------------------------------
 
 Users are more engaged with content when it talks to them directly. You

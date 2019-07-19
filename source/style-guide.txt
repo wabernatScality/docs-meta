@@ -23,13 +23,26 @@ Rackspace external and internal customers.
    headings, whether we allow contractions, and what formatting we
    apply to certain text.
 
+   .. note:: This information is under revision.
+
+:doc:`/style-guide/markup-guidelines`
+  Provides detailed guidelines about and instructions for applying
+  markup conventions for ReStructure Text (RST) and Yet Another Markup
+  Language (YAML).
+
+  .. note:: This information is under revision.
+
 :doc:`/style-guide/terminology/index`
    Provides advice for using accurate, consistent, and concise
    terminology in your content, and for writing for a global audience.
 
+   .. note:: This information is under revision.
+
 :doc:`/style-guide/screenshots/index`
    Provides instructions for when to use and how to create screenshots
    and diagrams to enhance your content.
+
+   .. note:: This information is under revision.
 
 :doc:`/style-guide/control-panels-and-portals`
    Provides guidelines for the capitalization and the URLs used for
@@ -78,7 +91,6 @@ Rackspace external and internal customers.
 
    .. note:: This information may not be in the final |mdbsg|.
 
-
 .. cssclass:: hidden
 
    .. toctree::
@@ -98,7 +110,14 @@ Rackspace external and internal customers.
       /style-guide/user-interface-guidelines
       /style-guide/revision-history
 
-.. figure:: screenshots/images/img/creativecommons.png
+The |mdbsg| includes material from the following:
 
-This work is licensed under a `Creative Commons Attribution 4.0
-International License <http://creativecommons.org/licenses/by/4.0/>`_.
+- `Google Developer Documentation Style Guide <https://developers.google.com/style/>`__
+  by `Google <https://www.google.com>`__, licensed under
+  :cc:`CC BY 4.0 </by/4.0/>`;
+- `Rackspace Style Guide for Technical Content <https://developer.rackspace.com/docs/style-guide/>`__
+  by `Rackspace <https://www.rackspace.com/>`__, licensed under
+  :cc:`CC BY 4.0 </by/4.0/>`; and
+- `Mailchimp Content Style Guide <https://styleguide.mailchimp.com/>`__
+  by `Mailchimp <https://mailchimp.com>`__, licensed under
+  :cc:`CC BY-NC 4.0 </by-nc/4.0>`.

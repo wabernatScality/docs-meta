@@ -1,0 +1,125 @@
+=====================
+Headings and Sections
+=====================
+
+.. include:: /includes/styles/corrections.rst
+
+|rst| uses repeating characters beneath the heading text to set
+headings.
+
+Heading Level Markup
+--------------------
+
+For, the under- and overlines for each Heading Level, use:
+
+.. list-table::
+   :header-rows: 1
+   :widths: 10 10 10 60 10
+
+   * - Heading Level
+     - Character
+     - Under or Overline
+     - Common Usage
+     - Render in HTML as
+
+   * - 1
+     - ``=``
+     - Both
+     - Page Titles Only
+     - ``<h1>``
+
+   * - 2
+     - ``-``
+     - Under
+     - Main Headings
+     - ``<h1>``
+
+   * - 3
+     - ``~``
+     - Under
+     - Subheadings
+     - ``<h3>``
+
+   * - 4
+     - `
+     - Under
+     - 2nd Level Subheadings
+     - ``<h4>``
+
+   * - 5
+     - ``+``
+     - Under
+     - 3rd Level Subheadings
+     - ``<h5>``
+
+Though you don't get build errors if you use the different underlines consistently, don't confuse .
+
+Heading Markup Rules
+--------------------
+
+These underlines must follow these rules to prevent build
+errors:
+
+- Don't skip Heading Levels. Heading Level 3 cannot come after
+  Heading Level 1.
+
+  .. list-table::
+     :header-rows: 1
+     :widths: 50 50
+
+     * - Use
+       - Avoid
+
+     * -
+
+         .. code-block:: rst
+
+            ============
+            Manage Users
+            ============
+
+            Create One New User
+            -------------------
+
+       -
+
+         .. code-block:: rst
+            :copyable: false
+
+            ============
+            Manage Users
+            ============
+
+            Create One New User
+            ~~~~~~~~~~~~~~~~~~~
+
+- Make the underline at least as long as the text above it.
+
+  .. list-table::
+     :header-rows: 1
+     :widths: 50 50
+
+     * - Use
+       - Avoid
+
+     * -
+
+         .. code-block:: rst
+
+            Create One New User
+            -------------------
+
+       -
+
+         .. code-block:: rst
+            :copyable: false
+
+            Create One New User
+            ----------------
+
+- Avoid |rst| replacements in heading text.
+  If the replacement text makes the heading text longer than the
+  underline length, your build generates an error.
+
+- Avoid headings within tabbed content directives, even those from
+  included files. If you need headings for your tabbed content,

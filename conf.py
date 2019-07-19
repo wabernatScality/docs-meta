@@ -42,6 +42,7 @@ extensions = [
     'tabs',
     'icon',
     'xmlrole',
+    'source_constants',
     'guides'
 ]
 
@@ -65,7 +66,8 @@ rst_epilog = '\n'.join([
     '.. |hardlink| replace:: {0}/{1}'.format(conf.project.url, conf.git.branches.current),
     '.. |branch| replace:: ``{0}``'.format(conf.git.branches.current),
     '.. |bi| replace:: MongoDB Connector for BI',
-    '.. |mdbsg| replace:: MongoDB Style Guide'
+    '.. |mdbsg| replace:: MongoDB Style Guide',
+    '.. |rst| replace:: reStructuredText'
 ])
 
 pygments_style = 'sphinx'
@@ -102,7 +104,11 @@ extlinks = {
     'wikipedia' : ('https://en.wikipedia.org/wiki%s', ''),
     'mw' : ('https://www.merriam-webster.com/dictionary/%s',''),
     'mdbdrivers' : ('https://docs.mongodb.com/ecosystem/drivers/%s',''),
-    'cmos17' : ('https://www.chicagomanualofstyle.org/book/ed17%s','')
+    'cmos17' : ('https://www.chicagomanualofstyle.org/book/ed17%s',''),
+    'sphinx-rst' : ('https://www.sphinx-doc.org/en/master/usage/restructuredtext%s', ''),
+    'sphinx' : ('https://www.sphinx-doc.org/en/master%s', ''),
+    'rst' : ('http://docutils.sourceforge.net/docs/ref/rst%s',''),
+    'cc' : ('https://creativecommons.org/licenses%s','')
 }
 
 ## add `extlinks` for each published version.
