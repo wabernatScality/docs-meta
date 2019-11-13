@@ -6,14 +6,8 @@ Release Notes Guidelines
 
 .. include:: /style-guide/includes/page-needs-update.rst
 
-This topic provides guidelines for writing release notes (RN) for
-MongoDB Cloud services APIs.
-
-A template for API RN is available in `on
-GitHub <https://github.com/rackerlabs/docs-repo-template/blob/master/api-guide-template/release-notes/releases/release-notes-template.rst>`__.
-
-For an example that illustrates most of these guidelines, see the
-:opsmgr:`Ops Manager Server Release Notes </release-notes/application/>`.
+This section of the style guide provides detailed guidelines about and
+instructions for writing release notes for MongoDB products.
 
 .. contents:: On this page
    :local:
@@ -21,11 +15,23 @@ For an example that illustrates most of these guidelines, see the
    :depth: 1
    :class: singlecol
 
-Structure
----------
+Versioning
+----------
+
+The current major releases include:
+
+- :manual:`MongoDB Server 4.2 </release-notes/4.2>`
+- :opsmgr:`MongoDB Ops Manager 4.2 </release-notes/application>`
+- :cldmgr:`MongoDB Cloud Manager v20191022 </release-notes/application>`
+- :atlas:`MongoDB Atlas v20191022 </release-notes/atlas>`
+
+
+The MongoDB Server, Ops Manager, Cloud Manager, Atlas 
+
+- The page title should be **<Product> Release Notes**.
 
 Initial Major Version Release
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-----------------------------
 
 For each major version-specific release note file that you create,
 observe the following guidelines:
@@ -35,7 +41,6 @@ observe the following guidelines:
    .. list-table::
       :widths: 50 50
       :header-rows: 1
-
 
       * - Format
         - Example
@@ -51,23 +56,22 @@ observe the following guidelines:
 
              *Released on 2019-07-04*
 
-             - Removing whitelist from Admin (General > Users) now possible.
-               Displays error message when Authentication expires
+             - Enables removal of whitelist from Admin (General >
+               Users).
+             - Displays error message when Authentication
+               expires
 
              - **Agent Upgrades:** :ref:`automation-5.4.20.5541`,
                :ref:`backup-6.8.7.1024`
 
-      * - If the release does not have a version number, use the API
-          contract version and date.
+      * - If the release does not have a version number, use the date .
         - **API | contract version | updates, January 07, 2017**
 
       * - If you are documenting a named or initial release, indicate
           the initial release in the title.
 
           You can precede release with a type, such as EA or UA.
-        - **API |contract version | release, September 14, 2017**
-
-          **API |contract version | EA release, September 14, 2017**
+        - **Released 2019-10-22**
 
 -  Use the following main sections in the release notes:
 
@@ -84,7 +88,6 @@ observe the following guidelines:
       Anything previously labeled as "enhancements" can be included
       either in "What's new" or "Resolved issues" as appropriate.
 
-
 -  Include the "What's new," "Resolved issues," and "Known issues"
    sections in every RN file, even if you have no content for one of
    those sections. If one of these sections has no content for a
@@ -99,12 +102,10 @@ observe the following guidelines:
 
       ``|no changes|``
 
-
 -  Include the "Documentation changes" section only if you have
    significant content changes, such as adding an extended example, a
    tutorial, or new content. If you have no significant content changes
    for a release, omit that section entirely.
-
 
 -  Order your RN files from latest to earliest, so that the latest is
    always "on top." For example, the release notes for version 1.1
@@ -113,10 +114,9 @@ observe the following guidelines:
 Formatting
 ~~~~~~~~~~
 
--  Use sentence-style capitalization for all headings, including the
-   title of the file (see the examples in the preceding section). The
-   only exception to this rule is the high-level title of the release
-   notes section, which is **Release Notes**.
+-  Use initial capitalization for all headings, including the
+   title of the file.
+
 
 -  If a section has several items, for example there are several
    resolved issues to document, provide the descriptions in a bullet
@@ -156,25 +156,20 @@ Use the following guideline when creating items in each section:
      - Examples
 
    * - What's new
-     - Use sentences to describe the new feature or enhancement.
-       Provide as needed, and provide a link to any section in the
-       documentation that describes that feature.
-     - IPv6 support has been added. When you create a server, an IPv4
-       address and an IPv6 address block are assigned. The IPv4 address and
-       IPv6 address block are used for the public interface (Internet). The
-       IPv4 address is also used for the private interface.
+     - Use imperative sentences to describe the new feature or
+       enhancement. Provide a link to any section in the documentation
+       that describes that feature whenever possible.
+     - Supports IPv6. New |onprem| hosts can use IPv4 and IPv6
+       addresses.
 
    * - Resolved issues
-     - Provide an initial phrase that describes the issue that was
-       fixed. Start the phrase with a past-tense verb. If necessary,
-       include sentences to further explain the fix. If you list only
-       phrases, do not use ending punctuation.
-     - Added support for Debian 8 (Jessie)
+     - Provide an imperative sentence that describes the issue that was
+       fixed. Start the sentence with a present-tense verb. If
+       necessary, include sentences to further explain the fix. Use
+       sentences with ending punctuation.
+     - Adds support for Debian 8 (Jessie)
 
-       Trimmed the Monitoring ID and Monitoring Token configuration
-       variables to ensure correctness
-
-       Fixed the Xen Server 6 package repo
+       Removes the 16 MB total size limit for a transaction.
 
    * - Known issues
      - Use sentences to describe the issue. If a workaround is
@@ -194,11 +189,17 @@ Use the following guideline when creating items in each section:
 Editing Existing Release Notes
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-In cases where existing release notes were not accurate at the time of
-publication, change the content to make it accurate. You can make the
-following types of changes:
+You can update existing release notes in two circumstances:
 
--  Fix typos
--  Correct links that were wrong at the time of publication
--  Correct incorrect statements to reflect what was correct at the time
-   of publication
+- Correct inaccuracies made at the time of publication.
+- Existing 
+
+You can make the following types of changes to fix the following issues
+that existed at the time of publication:
+
+-  Fix typos.
+-  Correct links to pages within the current documentation set or to
+   external sites or pages.
+-  Correct statements to reflect correct information.
+
+Release notes can 
