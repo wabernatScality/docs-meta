@@ -104,4 +104,5 @@ Use the following standards when creating your screenshots:
    differentiate between screenshots.
 -  **Titles:** Titles are not required, especially for screenshots
    in procedures and tutorials. If you want to add a title to a
-   screenshot for clarity, follow the guidelines in :ref:`titles-and-headings`.
+   screenshot for clarity, follow the guidelines in
+   :ref:`titles-and-headings`.
