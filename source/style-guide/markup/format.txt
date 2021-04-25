@@ -34,10 +34,10 @@ Text Markup
        - :doc:`code examples </style-guide/markup/directives/code-blocks>`
        - :doc:`cross references </style-guide/markup/roles/cross-ref>`
 
-     - Per PEP-008_ and Code Review tool does not text wrap.
+     - Per PEP-008_ and Code Review, tool does not text-wrap.
    * - Line endings
      - UNIX (LF)
-     - macOS and UNIX (Linux) end lines with line feeds. Using this
+     - macOS and Unix (Linux) end lines with line feeds. Using this
        form eliminates rendering errors in your text editor.
    * - Tabs
      - Use 2 spaces per tab.
@@ -46,12 +46,13 @@ Text Markup
        - PEP-008_ specifies spaces.
    * - End of File
      - Include a blank line.
-     - All cross-references are added to the bottom of each assembled {rst+} page. Lacking that extra space results in errors.
+     - All cross-references are added to the bottom of each assembled {rst+}
+       page. Omitting that extra space results in errors.
    * - Variable and File Naming Convention
      - kebab-case
      - Existing MongoDB convention.
    * - Indents
-     - As tabs, except when after a directive, then 3 spaces.
+     - As tabs, except when after a directive, then three spaces.
      - {rst+} follows PEP-008 conventions: text blocks must align to
        the same indent level.
 
